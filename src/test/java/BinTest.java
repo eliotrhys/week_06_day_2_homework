@@ -44,7 +44,10 @@ public class BinTest {
 
     @Test
     public void canThrowBookInBin(){
-        library1.binBook();
+        library1.addBook(thesunalsorises);
+        library1.addBook(harrypotter);
+        library1.takeBook();
+        myBin.binBook(library1);
         assertEquals(1, myBin.bookCount());
     }
 

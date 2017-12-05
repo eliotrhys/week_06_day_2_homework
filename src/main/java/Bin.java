@@ -22,5 +22,10 @@ public class Bin {
         {return;}
     }
 
-
+    public void binBook(Library library){
+        if(bookCount() < this.capacity) {
+        Book book = library.takeBook();
+        addBook(book);
+        }
+    }
 }
